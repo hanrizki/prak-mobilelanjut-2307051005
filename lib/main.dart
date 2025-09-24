@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 import 'screens/signup_screen.dart';
+import 'screens/dashboard_screen.dart';
+
 
 // Entry point aplikasi
 void main() => runApp(const JustduitApp());
@@ -45,6 +47,8 @@ class JustduitApp extends StatelessWidget {
         '/': (_) => const LoginScreen(),
         LoginScreen.route: (_) => const LoginScreen(),
         SignupScreen.route: (_) => const SignupScreen(),
+        DashboardScreen.route: (_) => const DashboardScreen(),
+
       },
     );
   }
